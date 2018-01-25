@@ -26,11 +26,11 @@ public class JsonResult<T> implements Serializable {
 
     public static final Integer CODE_SUCCESS = 200;
 
-    public static final Integer CODE_ERROR= 600;
+    public static final Integer CODE_ERROR= 500;
 
 
 
-    public static JsonResult NO_DATA_ERROR = new JsonResult(600, "操作失败!");
+    public static JsonResult NO_DATA_ERROR = new JsonResult(500, "操作失败!");
     public static JsonResult NO_DATA_SUCCESS = new JsonResult(200,"操作成功！");
     public static JsonResult INVOKE_TIMEOUT = new JsonResult(9999,"调用服务超时！");
 
